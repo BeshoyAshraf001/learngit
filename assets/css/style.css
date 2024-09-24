@@ -1,0 +1,53 @@
+figure figcaption {
+  width: calc(100% - 20px);
+  left: 10px;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform 200ms;
+}
+
+figure:hover figcaption {
+  transform: translateY(-10px);
+}
+
+figure img {
+  cursor: pointer;
+}
+
+.my-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  width: fit-content;
+}
+
+.modal-content img {
+  width: 700px;
+  object-fit: cover;
+}
+
+.modal-content i {
+  position: absolute;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.modal-content .closeBtn {
+  right: 20px;
+  top: 20px;
+}
+
+.modal-content .previousBtn,
+.modal-content .nextBtn {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-content .previousBtn {
+  left: 20px;
+}
+
+.modal-content .nextBtn {
+  right: 20px;
+}
